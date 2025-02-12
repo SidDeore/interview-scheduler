@@ -1,0 +1,115 @@
+.dashboard-container {
+  padding: 20px 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-container h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin: 45px auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-section label {
+  margin-left: 10px;
+}
+
+.filter-section input {
+  margin-left: 10px;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.calendar-container {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.Action-Buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.Action-Buttons button {
+  background-color: #0d6efd;
+  border-radius: 5px;
+  border-color: #0d6efd;
+  color: #fff;
+  padding: 10px 20px;
+  max-width: 300px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px 30px;
+  }
+
+  .dashboard-container h2 {
+    font-size: 36px;
+  }
+
+  .filter-section {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .calendar-container {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .Action-Buttons {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container h2 {
+    font-size: 28px;
+  }
+
+  .filter-section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .calendar-container {
+    height: 300px;
+    margin-bottom: 20px; 
+    background-color: #f9f9f9;
+  }
+
+  .Action-Buttons {
+    flex-direction: column;
+    margin-top: 225px;
+    margin-bottom: 40px;
+  }
+
+  .Action-Buttons button {
+    width: 100%;
+    max-width: none;
+  }
+}
